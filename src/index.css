@@ -16,12 +16,11 @@ body {
   background-color: #242424;
 }
 
-/* Home layout */
 .home {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: white;   /* 🔥 THIS IS KEY */
+  background-color: white;
 }
 
 /* Navbar */
@@ -85,7 +84,7 @@ body {
 }
 /* Content area */
 .white-part {
-  flex: 1;                     /* 🔥 THIS IS IMPORTANT */
+  flex: 1;                    
   background-color: white;
   display: flex;
   justify-content: center;
@@ -115,7 +114,6 @@ body {
   background-color: black;
 }
 
-/* Buttons (optional visual) */
 .text-input button {
   border-radius: none;
   width: 36px;
