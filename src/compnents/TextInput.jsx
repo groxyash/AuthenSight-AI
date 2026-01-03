@@ -4,7 +4,7 @@ function TextInput() {
       <button className="TextBarButton"><img src="src\assets\inputCamera.png" alt="Send" /></button>
       <button className="TextBarButton"><img src="src\assets\inputAudio.png" alt="Send" /></button>
       <button className="TextBarButton"><img src="src\assets\inputMedia.png" alt="Send" /></button>
-      <input placeholder="Enter Your Query"/>
+      <input placeholder="Enter Your Query" className='InputText'/>
       <button className="TextBarButton"><img src="src\assets\inputButton.png" alt="Send" /></button>
     </div>
   );
