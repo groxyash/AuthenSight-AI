@@ -134,3 +134,74 @@ body {
 .InputText{
   color: white;
 }
+
+.Header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.NavPages {
+  display: flex;                    /* level 2 */
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+}
+
+.NavPages a {
+  text-decoration: none;
+  color: white;
+}
+
+.NavBarButton{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.NavBarButton img{
+  transform: translateY(5px);
+  width:30px;
+  height: 30px;
+}
+
+#navele{
+  position: relative;
+  display: inline-block;
+  margin: 5px;
+  padding: 8px;
+}
+
+#navele::before,
+#navele::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+  transition: all 0.6s ease;
+}
+
+#navele::before {
+  top: 0;
+  left: 0;
+}
+
+#navele::after {
+  bottom: 0;
+  right: 0;
+}
+
+#navele:hover::before {
+  width: 99%;
+  height: 92%;
+  border-top-color: white;
+  border-left-color: white;
+}
+
+#navele:hover::after {
+  width: 99%;
+  height: 93%;
+  border-bottom-color: white;
+  border-right-color: white;
+}

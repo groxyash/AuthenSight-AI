@@ -9,7 +9,6 @@ function Home() {
     <TextInput/>
     </div>
     </div>
-    
   )
 }
 
