@@ -4,7 +4,7 @@ import TextInput from '../compnents/TextInput.jsx'
 function Home() {
   return(
     <div className="home">
-    <NavBar/>
+    {/* <NavBar/> */}
     <div className="white-part">
     <TextInput/>
     </div>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link ,NavLink} from "react-router-dom";
 
 function NavBar() {
   return (
@@ -8,9 +8,15 @@ function NavBar() {
         <Link to="/" id="AI-Name" ><h1>AuthenSightAI</h1></Link>
       </div>
       <div className="NavPages" >
-          <Link to="/" id="navele">Home</Link>
-          <Link to="/reports" id="navele" >Reports</Link>
-          <Link to="/about" id="navele" >About Us</Link>
+          <NavLink to="/" id="navele"
+            className={({isActive}) => `${isActive ? "isactive" : ""}`}
+          >Home</NavLink>
+          <NavLink to="/reports" id="navele" 
+            className={({isActive}) => `${isActive ? "isactive" : ""}`}
+          >Reports</NavLink>
+          <NavLink to="/about" id="navele" 
+            className={({isActive}) => `${isActive ? "isactive" : ""}`}
+          >About Us</NavLink>
       </div>
     </div>
   );
