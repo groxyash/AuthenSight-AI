@@ -4,6 +4,7 @@ import cameraIcon from "../assets/inputCamera.png"
 import audioIcon from "../assets/inputAudio.png"
 import mediaIcon from "../assets/inputMedia.png"
 import sendIcon from "../assets/inputButton.png"
+import CloseButton from "../assets/CloseButton.png"
 
 function TextInput() {
   const fileRef = useRef(null)
@@ -114,7 +115,7 @@ function TextInput() {
 
       {(selectedFile || cameraStream) && (
         <button className="remove-btn" onClick={removeMedia}>
-          ❌ Remove
+          <img src={CloseButton} alt="closeButton" />
         </button>
       )}
     </div>
