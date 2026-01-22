@@ -2,7 +2,7 @@
   min-height: 100vh;
   background-color: #0b0b0b;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   color: #ffffff;
   padding: 20px;
@@ -28,7 +28,7 @@
 }
 
 .profile-card {
-  max-width: 500px;
+  max-width: 1000px;
   width: 100%;
   background-color: #161616;
   border-radius: 16px;
@@ -52,4 +52,21 @@
   font-size: 0.95rem;
   color: #ddd;
   line-height: 1.6;
+}
+
+.profile-image{
+  width: 60%;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: aqua;
+}
+
+.profile-name{
+  margin-top: 20px;
+  color: #e8e3e3;
 }

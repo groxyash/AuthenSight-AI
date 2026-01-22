@@ -1,9 +1,28 @@
 import { useParams, useNavigate } from "react-router-dom";
 import "./Profile.css";
+import details from "./Card/details";
+import { useState } from "react";
+import img2 from './Card/Images/imageRishik.jpeg'
+import img3 from './Card/Images/imageYash.jpeg'
 
 function Profile() {
+  const images = [
+    {
+    name: "Aman",
+    img: img2
+  },{
+    name: "Rishik",
+    img: img2
+  },{
+    name: "Yash",
+    img: img3
+  }
+]
   const { id } = useParams();
   const navigate = useNavigate();
+  const [i,seti] = useState({})
+  const result = details.filter(item => item.name === id)
+  const image = images.filter(item => item.name === id)
 
   return (
     <div className="profile-page">
@@ -13,11 +32,15 @@ function Profile() {
 
       <div className="profile-card">
         <h1 className="profile-title">Profile Details</h1>
-        <p className="profile-id">Profile ID: {id}</p>
+        <img src={image[0].img} alt=""
+        className="profile-image"
+        />
+        <h1 className="profile-name">{result[0].fullname}</h1>
+        {/* <p className="profile-id">Profile ID: {id}</p> */}
+        <a href={result[0].github}>Github</a>
 
         <p className="profile-description">
-          This page shows full information related to the selected card.
-          You can fetch data from an API using this ID.
+          {result[0].about}
         </p>
       </div>
     </div>
