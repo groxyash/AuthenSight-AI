@@ -209,3 +209,11 @@ body {
 .isactive{
   
 }
+
+
+.remove-btn{
+  padding-top: 6px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
