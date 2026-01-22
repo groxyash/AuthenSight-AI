@@ -11,6 +11,7 @@ function Card({ name, fullname, github, cardContent, about, profileImage }) {
       <div className="card-content">
         <h2 className="card-title">{name}</h2>
         <h4 className="card-subtitle">{cardContent}</h4>
+        <h4 className='card-about'>{about}</h4>
         <p className="card-description"></p>
 
         <Link to={`/profile/${name}`} className="card-link">

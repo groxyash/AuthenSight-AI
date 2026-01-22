@@ -16,11 +16,24 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 20px;
+  transform: scale(1);
 }
 
 .card:hover {
-  transform: translateY(-6px);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+  max-height: 500px;
+}
+
+.card-about{
+  height: 150px;
+  color: #d0d0d0;
+  text-align: justify;
+}
+
+.card:hover .card-about{
+  display: block;
+  overflow: hidden;
 }
 
 .card-image {
@@ -41,9 +54,14 @@
 }
 
 .card-subtitle {
+  
   margin: 6px 0;
   font-size: 0.9rem;
   color: #bbbbbb;
+}
+
+.card-about{
+  display: none;
 }
 
 .card-description {
