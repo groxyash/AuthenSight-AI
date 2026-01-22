@@ -4,6 +4,9 @@ import details from "./Card/details";
 import { useState } from "react";
 import img2 from './Card/Images/imageRishik.jpeg'
 import img3 from './Card/Images/imageYash.jpeg'
+import linkdinLogo from './handleImages/LinkedIn.svg'
+import codeforcesLogo from './handleImages/Codeforces_logo.png'
+import githubLogo from './handleImages/githubImage.png'
 
 function Profile() {
   const images = [
@@ -36,8 +39,20 @@ function Profile() {
         className="profile-image"
         />
         <h1 className="profile-name">{result[0].fullname}</h1>
-        {/* <p className="profile-id">Profile ID: {id}</p> */}
-        <a href={result[0].github}>Github</a>
+        <div className="logo-div">
+          <a href={result[0].github}>
+            <img src={linkdinLogo} alt="" className="logo"/>
+          </a>
+          <a href={result[0].github}>
+            <img src={codeforcesLogo} alt="" className="logo"/>
+          </a>
+          <a href={result[0].github}>
+            <img src={githubLogo} alt="" className="logo"/>
+          </a>
+          {/* <a href={result[0].github}>
+            <img src={linkdinLogo} alt="" className="logo"/>
+          </a> */}
+        </div>
 
         <p className="profile-description">
           {result[0].about}
