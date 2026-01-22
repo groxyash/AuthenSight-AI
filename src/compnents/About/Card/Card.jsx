@@ -1,18 +1,19 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import "./Card.css";
+import details from './details';
 
-function Card({ imgSrc, title, subtitle, description, profileId }) {
+function Card({ name, fullname, github, cardContent, about, profileImage }) {
   return (
     <div className="card">
-      <img src={imgSrc} alt={title} className="card-image" />
+      <img src={new URL(`./Images/${profileImage}`, import.meta.url).href} alt={name} className="card-image" />
 
       <div className="card-content">
-        <h3 className="card-title">{title}</h3>
-        <h4 className="card-subtitle">{subtitle}</h4>
-        <p className="card-description">{description}</p>
+        <h2 className="card-title">{name}</h2>
+        <h4 className="card-subtitle">{cardContent}</h4>
+        <p className="card-description"></p>
 
-        <Link to={`/profile/${profileId}`} className="card-link">
+        <Link to={`/profile/${name}`} className="card-link">
           View Profile →
         </Link>
       </div>
