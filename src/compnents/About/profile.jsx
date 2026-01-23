@@ -1,12 +1,12 @@
 import { useParams, useNavigate } from "react-router-dom";
 import "./Profile.css";
 import details from "./Card/details";
-import { useState } from "react";
 import img2 from './Card/Images/imageRishik.jpeg'
 import img3 from './Card/Images/imageYash.jpeg'
 import linkdinLogo from './handleImages/LinkedIn.svg'
 import codeforcesLogo from './handleImages/Codeforces_logo.png'
 import githubLogo from './handleImages/githubImage.png'
+import codechef from './handleImages/CodeChef_Logo.svg.png'
 
 function Profile() {
   const images = [
@@ -23,9 +23,11 @@ function Profile() {
 ]
   const { id } = useParams();
   const navigate = useNavigate();
-  const [i,seti] = useState({})
   const result = details.filter(item => item.name === id)
   const image = images.filter(item => item.name === id)
+  const codeimage = result[0]?.name === 'Aman'
+  ? codeforcesLogo
+  : codechef;
 
   return (
     <div className="profile-page">
@@ -44,14 +46,11 @@ function Profile() {
             <img src={linkdinLogo} alt="" className="logo"/>
           </a>
           <a href={result[0].github}>
-            <img src={codeforcesLogo} alt="" className="logo"/>
+            <img src={codeimage} alt="" className="logo"/>
           </a>
           <a href={result[0].github}>
             <img src={githubLogo} alt="" className="logo"/>
           </a>
-          {/* <a href={result[0].github}>
-            <img src={linkdinLogo} alt="" className="logo"/>
-          </a> */}
         </div>
 
         <p className="profile-description">
