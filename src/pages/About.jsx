@@ -1,5 +1,5 @@
 import NavBar from '../compnents/NavBar.jsx'
-import TextInput from '../compnents/TextInput.jsx'
+import TextInput from '../compnents/FileInput.jsx'
 import Card from '../compnents/About/Card/Card.jsx';
 import "../compnents/About/Card/Card.css";
 import details from '../compnents/About/Card/details.js';
