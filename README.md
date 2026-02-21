@@ -159,8 +159,8 @@ Response:
 Built during a hackathon at IIIT Una.
 
 - **Rishik** — ML & FastAPI  
-- **Yash** — Frontend (React) & Backend (Express.js)  
-- **Aman** — Frontend (React) & Backend (Express.js)  
+- **Yash & Aman** — Frontend (React) & Backend (Express.js)  
+- **Yash & Aman** — Frontend (React) & Backend (Express.js)  
 
 ---
 
