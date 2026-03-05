@@ -21,8 +21,8 @@ function Profiles() {
             role: "ML STRATEGIST",
             description: "Specializing in machine learning and data-driven systems. Exploring neural transformations and real-world algorithmic solutions.",
             Linkedin: "https://www.linkedin.com/in/rishik-uchadiya-35a8b6312",
-            Github: "https://github.com/CoderRishik022",
-            Leetcode: "https://leetcode.com/u/Rishik022/"
+            Github: "https://github.com/Rickmon022",
+            Leetcode: "https://leetcode.com/u/Rickmon/"
         },
         {
             name: "Aman Kumar",
