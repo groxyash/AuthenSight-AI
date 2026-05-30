@@ -63,7 +63,7 @@ PyTorch (ResNet Model)
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/groxyash/authensight-ai.git
+git clone https://github.com/shauryaa108/authensight-ai.git
 cd authensight-ai
 ```
 
